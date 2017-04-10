@@ -147,11 +147,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-vc-aCA">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-vc-aCA">
                                         <rect key="frame" x="0.0" y="539" width="343" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPa-oM-hlA" userLabel="StopButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="64"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="ZcT-0W-x5a"/>
+                                                </constraints>
                                                 <state key="normal" image="Stop"/>
                                                 <connections>
                                                     <action selector="StopSound:" destination="imS-Zp-RJ8" eventType="touchUpInside" id="TGI-cL-oxf"/>
@@ -165,6 +168,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="qX1-4E-MJT" secondAttribute="trailing" id="GZr-Uf-4Ny"/>
                             <constraint firstItem="qX1-4E-MJT" firstAttribute="leading" secondItem="6bK-VI-gxR" secondAttribute="leadingMargin" id="MUA-pa-5Sr"/>
