@@ -1,0 +1,570 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PlaySoundsViewController"
+provides-nominal:
+- "C12RecordingApp24PlaySoundsViewController"
+- "OC12RecordingApp24PlaySoundsViewController10ButtonType"
+provides-member:
+- ["C12RecordingApp24PlaySoundsViewController", ""]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", ""]
+provides-dynamic-lookup:
+- "EchoButton"
+- "FastButton"
+- "HighPitchButton"
+- "LowPitchButton"
+- "PlatSound"
+- "ReverbButton"
+- "SlowButton"
+- "StopButton"
+- "StopSound"
+- "audioEngine"
+- "audioFile"
+- "audioPlayerNode"
+- "recordedAudioURL"
+- "stopTimer"
+- "viewDidLoad"
+- "viewWillAppear"
+depends-top-level:
+- "=="
+- "AVAudioEngine"
+- "AVAudioFile"
+- "AVAudioPlayerNode"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Int"
+- "PlaySoundsViewController"
+- !private "StringLiteralType"
+- "Timer"
+- "UIButton"
+- "UIViewController"
+- "URL"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["PSo21AVAudioPlayerDelegate", "ButtonType"]
+- !private ["PSo21AVAudioPlayerDelegate", "configureUI"]
+- !private ["PSo21AVAudioPlayerDelegate", "playSound"]
+- !private ["PSo21AVAudioPlayerDelegate", "print"]
+- !private ["PSo21AVAudioPlayerDelegate", "setupAudio"]
+- !private ["PSo21AVAudioPlayerDelegate", "stopAudio"]
+- !private ["Ps9AnyObject", "ButtonType"]
+- !private ["Ps9AnyObject", "configureUI"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "playSound"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "setupAudio"]
+- !private ["Ps9AnyObject", "stopAudio"]
+- !private ["Ps9AnyObject", "tag"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "viewWillAppear"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "RawValue"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "_toAnyHashable"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "chipmunk"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "deinit"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "echo"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "fast"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "hashValue"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "init"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "rawValue"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "reverb"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "slow"]
+- ["OC12RecordingApp24PlaySoundsViewController10ButtonType", "vader"]
+- !private ["PSo15CALayerDelegate", "tag"]
+- !private ["Ps7CVarArg", "ButtonType"]
+- !private ["Ps7CVarArg", "configureUI"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "playSound"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "setupAudio"]
+- !private ["Ps7CVarArg", "stopAudio"]
+- !private ["Ps7CVarArg", "tag"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "viewWillAppear"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "ButtonType"]
+- !private ["Ps28CustomDebugStringConvertible", "configureUI"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "playSound"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "setupAudio"]
+- !private ["Ps28CustomDebugStringConvertible", "stopAudio"]
+- !private ["Ps28CustomDebugStringConvertible", "tag"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "ButtonType"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "configureUI"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "playSound"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "setupAudio"]
+- !private ["Ps23CustomStringConvertible", "stopAudio"]
+- !private ["Ps23CustomStringConvertible", "tag"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "viewWillAppear"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "ButtonType"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "chipmunk"]
+- !private ["Ps9Equatable", "configureUI"]
+- ["Ps9Equatable", "echo"]
+- ["Ps9Equatable", "fast"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "notPlaying"]
+- !private ["Ps9Equatable", "playSound"]
+- !private ["Ps9Equatable", "playing"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "reverb"]
+- !private ["Ps9Equatable", "setupAudio"]
+- ["Ps9Equatable", "slow"]
+- !private ["Ps9Equatable", "stopAudio"]
+- !private ["Ps9Equatable", "tag"]
+- ["Ps9Equatable", "vader"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "viewWillAppear"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "ButtonType"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "chipmunk"]
+- !private ["Ps8Hashable", "configureUI"]
+- ["Ps8Hashable", "echo"]
+- ["Ps8Hashable", "fast"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "notPlaying"]
+- !private ["Ps8Hashable", "playSound"]
+- !private ["Ps8Hashable", "playing"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", "reverb"]
+- !private ["Ps8Hashable", "setupAudio"]
+- ["Ps8Hashable", "slow"]
+- !private ["Ps8Hashable", "stopAudio"]
+- !private ["Ps8Hashable", "tag"]
+- ["Ps8Hashable", "vader"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "viewWillAppear"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "ButtonType"]
+- !private ["PSo8NSCoding", "configureUI"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "playSound"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "setupAudio"]
+- !private ["PSo8NSCoding", "stopAudio"]
+- !private ["PSo8NSCoding", "tag"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "viewWillAppear"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "ButtonType"]
+- !private ["PSo26NSExtensionRequestHandling", "configureUI"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "playSound"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "setupAudio"]
+- !private ["PSo26NSExtensionRequestHandling", "stopAudio"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AVAudioEngine"]
+- ["CSo8NSObject", "AVAudioFile"]
+- ["CSo8NSObject", "AVAudioPlayerNode"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "ButtonType"]
+- ["CSo8NSObject", "EchoButton"]
+- ["CSo8NSObject", "FastButton"]
+- ["CSo8NSObject", "HighPitchButton"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "LowPitchButton"]
+- ["CSo8NSObject", "PlatSound"]
+- ["CSo8NSObject", "ReverbButton"]
+- ["CSo8NSObject", "SlowButton"]
+- ["CSo8NSObject", "StopButton"]
+- ["CSo8NSObject", "StopSound"]
+- ["CSo8NSObject", "Timer"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "audioEngine"]
+- ["CSo8NSObject", "audioFile"]
+- ["CSo8NSObject", "audioPlayerNode"]
+- !private ["CSo8NSObject", "configureUI"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "playSound"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "recordedAudioURL"]
+- !private ["CSo8NSObject", "setupAudio"]
+- !private ["CSo8NSObject", "stopAudio"]
+- ["CSo8NSObject", "stopTimer"]
+- !private ["CSo8NSObject", "tag"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "ButtonType"]
+- !private ["PSo16NSObjectProtocol", "configureUI"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "playSound"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "setupAudio"]
+- !private ["PSo16NSObjectProtocol", "stopAudio"]
+- !private ["PSo16NSObjectProtocol", "tag"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "viewWillAppear"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["C12RecordingApp24PlaySoundsViewController", "AVAudioEngine"]
+- ["C12RecordingApp24PlaySoundsViewController", "AVAudioFile"]
+- ["C12RecordingApp24PlaySoundsViewController", "AVAudioPlayerNode"]
+- ["C12RecordingApp24PlaySoundsViewController", "Bool"]
+- ["C12RecordingApp24PlaySoundsViewController", "ButtonType"]
+- ["C12RecordingApp24PlaySoundsViewController", "EchoButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "FastButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "HighPitchButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "Int"]
+- ["C12RecordingApp24PlaySoundsViewController", "LowPitchButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "PlatSound"]
+- ["C12RecordingApp24PlaySoundsViewController", "ReverbButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "SlowButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "StopButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "StopSound"]
+- ["C12RecordingApp24PlaySoundsViewController", "Timer"]
+- ["C12RecordingApp24PlaySoundsViewController", "UIButton"]
+- ["C12RecordingApp24PlaySoundsViewController", "URL"]
+- ["C12RecordingApp24PlaySoundsViewController", "audioEngine"]
+- ["C12RecordingApp24PlaySoundsViewController", "audioFile"]
+- ["C12RecordingApp24PlaySoundsViewController", "audioPlayerNode"]
+- !private ["C12RecordingApp24PlaySoundsViewController", "configureUI"]
+- ["C12RecordingApp24PlaySoundsViewController", "deinit"]
+- ["C12RecordingApp24PlaySoundsViewController", "init"]
+- !private ["C12RecordingApp24PlaySoundsViewController", "playSound"]
+- !private ["C12RecordingApp24PlaySoundsViewController", "print"]
+- ["C12RecordingApp24PlaySoundsViewController", "recordedAudioURL"]
+- !private ["C12RecordingApp24PlaySoundsViewController", "setupAudio"]
+- !private ["C12RecordingApp24PlaySoundsViewController", "stopAudio"]
+- ["C12RecordingApp24PlaySoundsViewController", "stopTimer"]
+- ["C12RecordingApp24PlaySoundsViewController", "viewDidLoad"]
+- ["C12RecordingApp24PlaySoundsViewController", "viewWillAppear"]
+- !private ["OC12RecordingApp24PlaySoundsViewController12PlayingState", "notPlaying"]
+- !private ["OC12RecordingApp24PlaySoundsViewController12PlayingState", "playing"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "chipmunk"]
+- ["Ps16RawRepresentable", "echo"]
+- ["Ps16RawRepresentable", "fast"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", "reverb"]
+- ["Ps16RawRepresentable", "slow"]
+- ["Ps16RawRepresentable", "vader"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "tag"]
+- !private ["PSo12UIAppearance", "tag"]
+- !private ["PSo21UIAppearanceContainer", "ButtonType"]
+- !private ["PSo21UIAppearanceContainer", "configureUI"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "playSound"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "setupAudio"]
+- !private ["PSo21UIAppearanceContainer", "stopAudio"]
+- !private ["PSo21UIAppearanceContainer", "tag"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "viewWillAppear"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "tag"]
+- !private ["PSo18UIContentContainer", "ButtonType"]
+- !private ["PSo18UIContentContainer", "configureUI"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "playSound"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "setupAudio"]
+- !private ["PSo18UIContentContainer", "stopAudio"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "viewWillAppear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "tag"]
+- !private ["PSo17UICoordinateSpace", "tag"]
+- !private ["PSo13UIDynamicItem", "tag"]
+- !private ["PSo18UIFocusEnvironment", "ButtonType"]
+- !private ["PSo18UIFocusEnvironment", "configureUI"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "playSound"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "setupAudio"]
+- !private ["PSo18UIFocusEnvironment", "stopAudio"]
+- !private ["PSo18UIFocusEnvironment", "tag"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "tag"]
+- ["CSo11UIResponder", "AVAudioEngine"]
+- ["CSo11UIResponder", "AVAudioFile"]
+- ["CSo11UIResponder", "AVAudioPlayerNode"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "ButtonType"]
+- ["CSo11UIResponder", "EchoButton"]
+- ["CSo11UIResponder", "FastButton"]
+- ["CSo11UIResponder", "HighPitchButton"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "LowPitchButton"]
+- ["CSo11UIResponder", "PlatSound"]
+- ["CSo11UIResponder", "ReverbButton"]
+- ["CSo11UIResponder", "SlowButton"]
+- ["CSo11UIResponder", "StopButton"]
+- ["CSo11UIResponder", "StopSound"]
+- ["CSo11UIResponder", "Timer"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "URL"]
+- ["CSo11UIResponder", "audioEngine"]
+- ["CSo11UIResponder", "audioFile"]
+- ["CSo11UIResponder", "audioPlayerNode"]
+- !private ["CSo11UIResponder", "configureUI"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "playSound"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "recordedAudioURL"]
+- !private ["CSo11UIResponder", "setupAudio"]
+- !private ["CSo11UIResponder", "stopAudio"]
+- ["CSo11UIResponder", "stopTimer"]
+- !private ["CSo11UIResponder", "tag"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "ButtonType"]
+- !private ["PSo30UIResponderStandardEditActions", "configureUI"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "playSound"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "setupAudio"]
+- !private ["PSo30UIResponderStandardEditActions", "stopAudio"]
+- !private ["PSo30UIResponderStandardEditActions", "tag"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "ButtonType"]
+- !private ["PSo16UIStateRestoring", "configureUI"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "playSound"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "setupAudio"]
+- !private ["PSo16UIStateRestoring", "stopAudio"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "viewWillAppear"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "ButtonType"]
+- !private ["PSo18UITraitEnvironment", "configureUI"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "playSound"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "setupAudio"]
+- !private ["PSo18UITraitEnvironment", "stopAudio"]
+- !private ["PSo18UITraitEnvironment", "tag"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "viewWillAppear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "tag"]
+- ["CSo16UIViewController", "AVAudioEngine"]
+- ["CSo16UIViewController", "AVAudioFile"]
+- ["CSo16UIViewController", "AVAudioPlayerNode"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "ButtonType"]
+- ["CSo16UIViewController", "EchoButton"]
+- ["CSo16UIViewController", "FastButton"]
+- ["CSo16UIViewController", "HighPitchButton"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "LowPitchButton"]
+- ["CSo16UIViewController", "PlatSound"]
+- ["CSo16UIViewController", "ReverbButton"]
+- ["CSo16UIViewController", "SlowButton"]
+- ["CSo16UIViewController", "StopButton"]
+- ["CSo16UIViewController", "StopSound"]
+- ["CSo16UIViewController", "Timer"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "URL"]
+- ["CSo16UIViewController", "audioEngine"]
+- ["CSo16UIViewController", "audioFile"]
+- ["CSo16UIViewController", "audioPlayerNode"]
+- !private ["CSo16UIViewController", "configureUI"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "playSound"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "recordedAudioURL"]
+- !private ["CSo16UIViewController", "setupAudio"]
+- !private ["CSo16UIViewController", "stopAudio"]
+- ["CSo16UIViewController", "stopTimer"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tag"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "ButtonType"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "chipmunk"]
+- !private ["Ps9_Hashable", "configureUI"]
+- ["Ps9_Hashable", "echo"]
+- ["Ps9_Hashable", "fast"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "notPlaying"]
+- !private ["Ps9_Hashable", "playSound"]
+- !private ["Ps9_Hashable", "playing"]
+- !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", "reverb"]
+- !private ["Ps9_Hashable", "setupAudio"]
+- ["Ps9_Hashable", "slow"]
+- !private ["Ps9_Hashable", "stopAudio"]
+- !private ["Ps9_Hashable", "tag"]
+- ["Ps9_Hashable", "vader"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "viewWillAppear"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- !private "PSo21AVAudioPlayerDelegate"
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "OC12RecordingApp24PlaySoundsViewController10ButtonType"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "C12RecordingApp24PlaySoundsViewController"
+- !private "OC12RecordingApp24PlaySoundsViewController12PlayingState"
+- "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "d283d843cec03024d310d69b0d629388"

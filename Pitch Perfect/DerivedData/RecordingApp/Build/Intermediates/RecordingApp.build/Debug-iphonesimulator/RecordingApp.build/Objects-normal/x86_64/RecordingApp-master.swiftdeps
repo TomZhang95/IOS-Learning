@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+options: "e3af864089a091a35e7b47e6c827af0b"
+build_time: [545515285, 273323000]
+inputs:
+  "/Users/Tom/Desktop/Study/IOS/RecordingApp/RecordingApp/RecordSoundViewController.swift": [544604333, 0]
+  "/Users/Tom/Desktop/Study/IOS/RecordingApp/RecordingApp/PlaySoundsViewController+Audio.swift": [544862241, 0]
+  "/Users/Tom/Desktop/Study/IOS/RecordingApp/RecordingApp/PlaySoundsViewController.swift": [545021445, 0]
+  "/Users/Tom/Desktop/Study/IOS/RecordingApp/RecordingApp/AppDelegate.swift": [544598288, 0]
