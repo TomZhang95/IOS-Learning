@@ -135,6 +135,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 @import ObjectiveC;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -164,23 +165,36 @@ SWIFT_CLASS("_TtC9Meme_v1_017TextFieldDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIToolbar;
 @class UIImageView;
 @class UIBarButtonItem;
 @class UIImagePickerController;
+@class UIImage;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9Meme_v1_014ViewController")
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified toolBar;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified bottomTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageShowing;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
 @property (nonatomic, readonly, strong) TextFieldDelegate * _Nonnull textFieldDelegate;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull textFieldAttributes;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (IBAction)pickFromCamra:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)pickFromAlbum:(UIBarButtonItem * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (CGFloat)getKeyboardHeight:(NSNotification * _Nonnull)notification SWIFT_WARN_UNUSED_RESULT;
+- (void)keyboardWillShow:(NSNotification * _Nonnull)notification;
+- (void)keyboardWillHide:(NSNotification * _Nonnull)notification;
+- (void)subscribeKeyboardNotification;
+- (void)unsubscribeKeyboardNotification;
+- (UIImage * _Nonnull)genrateMemeImage SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
