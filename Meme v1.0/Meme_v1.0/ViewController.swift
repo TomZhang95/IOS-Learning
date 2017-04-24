@@ -112,17 +112,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memeImage
     }
     @IBAction func shareMemeImage(_ sender: UIBarButtonItem) {
-        let memeImage = generateMemeImage()
-        let activityController = UIActivityViewController(activityItems: [memeImage], applicationActivities: nil)
+        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageShowing.image!, memedImage: generateMemeImage())
+        let activityController = UIActivityViewController(activityItems: [meme.memedImage], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
-//        activityController.completionWithItemsHandler = {(activityType: UIActivityType?, completed: Bool, returnedItem:[Any]?, error: Error) in
-//            if completed {
-//                UIImageWriteToSavedPhotosAlbum(memeImage, nil, nil, nil)
-//            } else {
-//                return
-//            }
-//            
-//        }as? UIActivityViewControllerCompletionWithItemsHandler
+        activityController.completionWithItemsHandler = {(activityType: UIActivityType?, completed: Bool, returnedItem:[Any]?, error: Error) in
+            if completed {
+                UIImageWriteToSavedPhotosAlbum(meme.memedImage, nil, nil, nil)
+            } else {
+                return
+            }
+            
+        }as? UIActivityViewControllerCompletionWithItemsHandler
     }
 
 }
