@@ -175,11 +175,13 @@ SWIFT_CLASS("_TtC9Meme_v1_017TextFieldDelegate")
 
 SWIFT_CLASS("_TtC9Meme_v1_014ViewController")
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified toolBar;
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified topToolbar;
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified bottomToolbar;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified topTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified bottomTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageShowing;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 @property (nonatomic, readonly, strong) TextFieldDelegate * _Nonnull textFieldDelegate;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull textFieldAttributes;
 - (void)viewWillAppear:(BOOL)animated;
@@ -194,7 +196,8 @@ SWIFT_CLASS("_TtC9Meme_v1_014ViewController")
 - (void)keyboardWillHide:(NSNotification * _Nonnull)notification;
 - (void)subscribeKeyboardNotification;
 - (void)unsubscribeKeyboardNotification;
-- (UIImage * _Nonnull)genrateMemeImage SWIFT_WARN_UNUSED_RESULT;
+- (UIImage * _Nonnull)generateMemeImage SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)shareMemeImage:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
