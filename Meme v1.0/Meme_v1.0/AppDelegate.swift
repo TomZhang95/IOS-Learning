@@ -12,11 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var memeObjects = Array<Meme>()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
+    }
+    
+    func setStatusBarHidden(application: UIApplication, hidden: Bool) {
+        application.isStatusBarHidden = hidden
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

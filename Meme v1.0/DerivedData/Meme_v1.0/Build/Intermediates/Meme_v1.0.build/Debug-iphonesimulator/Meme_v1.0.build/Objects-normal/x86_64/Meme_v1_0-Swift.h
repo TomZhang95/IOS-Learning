@@ -147,6 +147,7 @@ SWIFT_CLASS("_TtC9Meme_v1_011AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (void)setStatusBarHiddenWithApplication:(UIApplication * _Nonnull)application hidden:(BOOL)hidden;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -182,6 +183,7 @@ SWIFT_CLASS("_TtC9Meme_v1_014ViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageShowing;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified cameraButton;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
+@property (nonatomic, readonly, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, readonly, strong) TextFieldDelegate * _Nonnull textFieldDelegate;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull textFieldAttributes;
 - (void)viewWillAppear:(BOOL)animated;

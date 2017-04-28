@@ -12,9 +12,11 @@ provides-dynamic-lookup:
 - "applicationWillEnterForeground"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "setStatusBarHidden"
 - "window"
 depends-top-level:
 - "AppDelegate"
+- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "UIApplication"
@@ -36,6 +38,7 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isStatusBarHidden"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C9Meme_v1_011AppDelegate", "Bool"]
@@ -56,6 +59,7 @@ depends-member:
 - ["C9Meme_v1_011AppDelegate", "applicationWillTerminate"]
 - ["C9Meme_v1_011AppDelegate", "deinit"]
 - ["C9Meme_v1_011AppDelegate", "init"]
+- ["C9Meme_v1_011AppDelegate", "setStatusBarHidden"]
 - ["C9Meme_v1_011AppDelegate", "window"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
@@ -70,6 +74,7 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isStatusBarHidden"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - ["Ps28CustomDebugStringConvertible", "application"]
@@ -85,6 +90,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isStatusBarHidden"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "application"]
@@ -100,6 +106,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isStatusBarHidden"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "application"]
@@ -115,6 +122,7 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isStatusBarHidden"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "application"]
@@ -130,6 +138,7 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isStatusBarHidden"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "Bool"]
@@ -149,6 +158,8 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isStatusBarHidden"]
+- ["CSo8NSObject", "setStatusBarHidden"]
 - ["CSo8NSObject", "window"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
@@ -163,8 +174,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isStatusBarHidden"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["CSo13UIApplication", "isStatusBarHidden"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -196,6 +209,8 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isStatusBarHidden"]
+- ["CSo11UIResponder", "setStatusBarHidden"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - ["PSo30UIResponderStandardEditActions", "application"]
@@ -211,6 +226,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isStatusBarHidden"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["Ps9_Hashable", "application"]
@@ -226,6 +242,7 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isStatusBarHidden"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
@@ -238,6 +255,7 @@ depends-nominal:
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -260,4 +278,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "b306772a10463f7c5fce689aa6452f8e"
+interface-hash: "b603844a6dd5046f802aa43784cb4d6d"

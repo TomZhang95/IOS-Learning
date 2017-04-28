@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-GE-6Kl">
-                                <rect key="frame" x="16" y="44" width="343" height="579"/>
+                                <rect key="frame" x="16" y="64" width="343" height="559"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-vx-XuF" userLabel="BottomToolbar">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -44,7 +44,7 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLT-qp-kKH">
-                                <rect key="frame" x="45" y="134" width="284" height="30"/>
+                                <rect key="frame" x="45" y="154" width="284" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aDW-Mi-Rnp"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-Cx-vUA" userLabel="TopToolbar">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
                                 <items>
                                     <barButtonItem enabled="NO" title="Share" id="8GQ-ce-SpC">
                                         <connections>
@@ -77,18 +77,18 @@
                             <constraint firstItem="FkB-TI-6w2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="6ry-y8-ANG"/>
                             <constraint firstItem="FkB-TI-6w2" firstAttribute="top" secondItem="uLA-GE-6Kl" secondAttribute="bottom" constant="-100" id="9zf-ET-bty"/>
                             <constraint firstItem="uLA-GE-6Kl" firstAttribute="top" secondItem="hLT-qp-kKH" secondAttribute="bottom" constant="-120" id="EgW-jf-ZUx"/>
+                            <constraint firstItem="uLA-GE-6Kl" firstAttribute="top" secondItem="aYm-Cx-vUA" secondAttribute="bottom" id="Eh4-9h-Qw8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f4h-vx-XuF" secondAttribute="bottom" id="GUp-LG-jCW"/>
-                            <constraint firstItem="uLA-GE-6Kl" firstAttribute="top" secondItem="aYm-Cx-vUA" secondAttribute="bottom" id="GWR-Hd-bgd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aYm-Cx-vUA" secondAttribute="trailing" constant="-16" id="LM7-GB-xrG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aYm-Cx-vUA" secondAttribute="leading" constant="20" id="I0G-oz-sNG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FkB-TI-6w2" secondAttribute="trailing" constant="30" id="MdK-aE-EyN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hLT-qp-kKH" secondAttribute="trailing" constant="30" id="SSf-q2-cSj"/>
                             <constraint firstItem="f4h-vx-XuF" firstAttribute="top" secondItem="uLA-GE-6Kl" secondAttribute="bottom" id="TuZ-LG-fva"/>
                             <constraint firstItem="uLA-GE-6Kl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZJ3-pn-XOp"/>
+                            <constraint firstItem="aYm-Cx-vUA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ceG-Nr-Olq"/>
                             <constraint firstItem="f4h-vx-XuF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eX0-Uf-Fzb"/>
                             <constraint firstItem="hLT-qp-kKH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="g2k-Sj-Zlo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aYm-Cx-vUA" secondAttribute="trailing" constant="-20" id="iUU-NR-sbj"/>
                             <constraint firstItem="uLA-GE-6Kl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lF1-3w-UuB"/>
-                            <constraint firstItem="aYm-Cx-vUA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="mKh-nd-Y9f"/>
-                            <constraint firstItem="uLA-GE-6Kl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="s1b-bK-sa1"/>
                             <constraint firstAttribute="trailing" secondItem="f4h-vx-XuF" secondAttribute="trailing" id="tY6-ct-Oop"/>
                         </constraints>
                     </view>

@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     
+    let appDelegate = AppDelegate()
     let textFieldDelegate = TextFieldDelegate()
     let textFieldAttributes: [String:Any] = [
         NSForegroundColorAttributeName: UIColor.white,
@@ -81,6 +82,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func keyboardWillShow(_ notification: Notification) {
+        // only if it is top text field ? active responder
+
         view.frame.origin.y -= getKeyboardHeight(notification)
     }
     
@@ -115,14 +118,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageShowing.image!, memedImage: generateMemeImage())
         let activityController = UIActivityViewController(activityItems: [meme.memedImage], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
-        activityController.completionWithItemsHandler = {(activityType: UIActivityType?, completed: Bool, returnedItem:[Any]?, error: Error) in
+        
+        activityController.completionWithItemsHandler = {
+            (acitivity, completed, returnedItems,error) in
             if completed {
-                UIImageWriteToSavedPhotosAlbum(meme.memedImage, nil, nil, nil)
-            } else {
-                return
+            self.appDelegate.memeObjects.append(meme)
+            // store in app delegate
+                print("Storing complet")
             }
-            
-        }as? UIActivityViewControllerCompletionWithItemsHandler
+            else {
+                print("Storing not complet")
+            }
+        }
+        
     }
 
 }
