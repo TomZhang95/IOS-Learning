@@ -23,6 +23,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let textFieldDelegate = TextFieldDelegate()
     let textFieldAttributes: [String:Any] = [
         NSForegroundColorAttributeName: UIColor.white,
+        NSStrokeColorAttributeName: UIColor.black,
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!]
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,39 +36,43 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         unsubscribeKeyboardNotification()
     }
     
+    func configureTextField(_ textField: UITextField) {
+        textField.delegate = textFieldDelegate
+        textField.defaultTextAttributes = textFieldAttributes
+        textField.textAlignment = .center
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topTextField.delegate = textFieldDelegate
-        topTextField.defaultTextAttributes = textFieldAttributes
-        topTextField.textAlignment = .center
-        bottomTextField.delegate = textFieldDelegate
-        bottomTextField.defaultTextAttributes = textFieldAttributes
-        bottomTextField.textAlignment = .center
+        configureTextField(topTextField)
+        configureTextField(bottomTextField)
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
-    @IBAction func pickFromCamra(_ sender: UIBarButtonItem) {
+    
+    func pickImage(_ type: UIImagePickerControllerSourceType) {
         let albumPicker = UIImagePickerController()
         albumPicker.delegate = self
-        albumPicker.sourceType = .camera
+        albumPicker.sourceType = type
         present(albumPicker, animated: true, completion: nil)
     }
 
+    @IBAction func pickFromCamra(_ sender: UIBarButtonItem) {
+        pickImage(.camera)
+    }
+
     @IBAction func pickFromAlbum(_ sender: UIBarButtonItem) {
-        let albumPicker = UIImagePickerController()
-        albumPicker.delegate = self
-        albumPicker.sourceType = .photoLibrary
-        present(albumPicker, animated: true, completion: nil)
+        pickImage(.photoLibrary)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageShowing.image = image
+            imageShowing.contentMode = .scaleAspectFill
             dismiss(animated: true, completion: nil)
             shareButton.isEnabled = true
         } else {
@@ -82,13 +87,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func keyboardWillShow(_ notification: Notification) {
-        // only if it is top text field ? active responder
-
-        view.frame.origin.y -= getKeyboardHeight(notification)
+        if bottomTextField.isFirstResponder {
+            view.frame.origin.y -= getKeyboardHeight(notification)
+        }
     }
     
     func keyboardWillHide(_ notification: Notification) {
-        view.frame.origin.y = 0
+        if bottomTextField.isFirstResponder {
+            view.frame.origin.y = 0
+        }
     }
 
     func subscribeKeyboardNotification() {
@@ -115,15 +122,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memeImage
     }
     @IBAction func shareMemeImage(_ sender: UIBarButtonItem) {
-        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageShowing.image!, memedImage: generateMemeImage())
-        let activityController = UIActivityViewController(activityItems: [meme.memedImage], applicationActivities: nil)
+        let sharingImage = generateMemeImage()
+        let activityController = UIActivityViewController(activityItems: [sharingImage], applicationActivities: nil)
         present(activityController, animated: true, completion: nil)
         
         activityController.completionWithItemsHandler = {
             (acitivity, completed, returnedItems,error) in
             if completed {
-            self.appDelegate.memeObjects.append(meme)
-            // store in app delegate
+                let meme = Meme(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.imageShowing.image!, memedImage: sharingImage)
+                self.appDelegate.memeObjects.append(meme)
+                // store in app delegate
                 print("Storing complet")
             }
             else {

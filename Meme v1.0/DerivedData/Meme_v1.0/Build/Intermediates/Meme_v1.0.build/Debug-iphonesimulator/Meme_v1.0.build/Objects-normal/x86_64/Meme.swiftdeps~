@@ -1,11 +1,33 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Meme"
 provides-nominal:
+- "C9Meme_v1_04Meme"
 provides-member:
+- ["C9Meme_v1_04Meme", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "Meme"
+- "String"
+- "UIImage"
 depends-member:
+- !private ["Ps9AnyObject", "bottomText"]
+- !private ["Ps9AnyObject", "memedImage"]
+- !private ["Ps9AnyObject", "originalImage"]
+- !private ["Ps9AnyObject", "topText"]
+- ["Ps9AnyObject", ""]
+- ["C9Meme_v1_04Meme", "String"]
+- ["C9Meme_v1_04Meme", "UIImage"]
+- ["C9Meme_v1_04Meme", "bottomText"]
+- ["C9Meme_v1_04Meme", "deinit"]
+- ["C9Meme_v1_04Meme", "init"]
+- ["C9Meme_v1_04Meme", "memedImage"]
+- ["C9Meme_v1_04Meme", "originalImage"]
+- ["C9Meme_v1_04Meme", "topText"]
 depends-nominal:
+- "Ps9AnyObject"
+- "C9Meme_v1_04Meme"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -24,4 +46,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "1719d2fbb65e5c458f960fb1b9d9eca7"

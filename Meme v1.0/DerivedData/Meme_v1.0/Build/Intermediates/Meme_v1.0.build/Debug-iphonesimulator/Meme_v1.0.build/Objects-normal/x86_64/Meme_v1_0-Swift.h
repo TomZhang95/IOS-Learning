@@ -188,8 +188,10 @@ SWIFT_CLASS("_TtC9Meme_v1_014ViewController")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull textFieldAttributes;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)configureTextField:(UITextField * _Nonnull)textField;
 - (void)viewDidLoad;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (void)pickImage:(UIImagePickerControllerSourceType)type;
 - (IBAction)pickFromCamra:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)pickFromAlbum:(UIBarButtonItem * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
