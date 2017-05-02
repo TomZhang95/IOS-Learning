@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meme_v1.0/ViewController.swift"
-            timestampString = "515143154.057071"
+            timestampString = "515396013.481202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "shareMemeImage(_:)"
             landmarkType = "7">
             <Locations>

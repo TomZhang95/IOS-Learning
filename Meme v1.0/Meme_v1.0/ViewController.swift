@@ -19,11 +19,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     
-    let appDelegate = AppDelegate()
+    var appDelegate: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
     let textFieldDelegate = TextFieldDelegate()
     let textFieldAttributes: [String:Any] = [
         NSForegroundColorAttributeName: UIColor.white,
         NSStrokeColorAttributeName: UIColor.black,
+        NSStrokeWidthAttributeName: -3,
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!]
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,7 +76,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageShowing.image = image
-            imageShowing.contentMode = .scaleAspectFill
+            imageShowing.contentMode = .scaleAspectFit
             dismiss(animated: true, completion: nil)
             shareButton.isEnabled = true
         } else {
